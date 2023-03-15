@@ -1,11 +1,18 @@
 package bootiful.kotlin
 
-import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
+fun main() {
 
-@SpringBootApplication
-class KotlinApplication
+	//fun reverse (string : String) = string.reversed()
 
-fun main(args: Array<String>) {
-	runApplication<KotlinApplication>(*args)
+	//val reverse : (String) -> String = {name -> name.reversed()}
+	val reverse = {name : String -> name.reversed()}
+
+	val name : String = "Joe"
+	val age = 39
+
+	println("name is $name and the age is $age")
+
+	val text = reverse("this is kotlin code")
+
+	println("reverse string $text")
 }
